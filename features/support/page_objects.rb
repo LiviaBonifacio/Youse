@@ -26,7 +26,7 @@ class Life <SitePrism::Page
   element :enter_name, "#life_order_flow_lead_person_data_lead_person_attributes_name"
   element :enter_phone, "#life_order_flow_lead_person_data_lead_person_attributes_phone"
   element :enter_email, "#life_order_flow_lead_person_data_lead_person_attributes_email"
-  element :click_simulacao, ".button.button--primary"
+  element :click_simulacao, '.button.button--primary'
   element :enter_dateBirth, "#life_order_flow_pricing_requirements_insured_person_attributes_date_of_birth"
   element :enter_datePartner, "#life_order_flow_pricing_requirements_insured_person_mate_attributes_date_of_birth"
   element :enter_work, ".select2-selection__arrow"

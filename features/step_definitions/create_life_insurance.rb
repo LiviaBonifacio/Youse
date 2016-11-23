@@ -7,7 +7,7 @@ Given(/^access life insurance page$/) do
 end
 
 When(/^Inform contact data$/) do
-  @life.enter_name.set(Faker::Name.name)
+  @life.enter_name.set(Faker::Name.first_name
   @life.enter_phone.set('1199999-9999')
   @life.enter_email.set(Faker::Internet.email)
 end
