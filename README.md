@@ -1,6 +1,6 @@
 # Youse
 
-1 - Testes estao rodando firefox mozila.
+1 - Os testes estao rodando no firefox mozila.
 
 2 - Possuir as seguintes instalaçoes:
     require "capybara/cucumber"
