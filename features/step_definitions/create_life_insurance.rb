@@ -21,25 +21,23 @@ And (/^enter personal data$/) do
   @life.enter_work.click
   @life.enter_occupation.set('analista de folha de pagamento')
   first(:option, 'Analista de folha de pagamento').select_option
-  @life.click_income.click
-  select(second_option, 'De R$ 800,01 a R$ 2.500,00').select_option
+  find(:option, 'Acima de R$ 7.000,00').select_option
 end
 
 And (/^enter civil status$/) do
-  @life.select_status.click
   first(:option, 'Sou casado(a)').select_option
 end
 
 And (/^inform partner data$/) do
-    @life.enter_datePartner.set('12011987')
-    @life.click_workPartner.click
-    @life.enter_occupationPartner.set('analista de folha de pagamento')
-    first(:option, 'Analista de desenvolvimento de sistemas').select_option
-    @life.see_price.click
+  @life.enter_datePartner.set('12011987')
+  @life.click_workPartner.click
+  within @life.enter_occupationPartner do
+    find(:option, 'Analista de sistemas').select_option
+  end
 end
 
 And (/^click on the price$/) do
-  @account.click_send.click
+  @life.see_price.click
 end
 
 Then (/^system displays plans successfully$/) do

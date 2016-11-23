@@ -31,9 +31,7 @@ class Life <SitePrism::Page
   element :enter_datePartner, "#life_order_flow_pricing_requirements_insured_person_mate_attributes_date_of_birth"
   element :enter_work, ".select2-selection__arrow"
   element :enter_occupation, ".select2-search__field"
-  element :click_income, "#life_order_flow_pricing_requirements_insured_person_attributes_salary_range"
-  element :select_status, "#life_order_flow_pricing_requirements_insured_person_attributes_has_mate"
-  element :click_workPartner, "#select2-life_order_flow_pricing_requirements_insured_person_mate_attributes_occupation-container"
-  element :enter_occupationPartner, :xpath, '//*[@id="container"]/span[4]/span/span[1]/input'
+  element :click_workPartner, :xpath, '//*[@id="life_quote_insured_person_mate_group"]/fieldset[2]/span/span[1]/span/span[2]'
+  element :enter_occupationPartner, '#life_order_flow_pricing_requirements_insured_person_mate_attributes_occupation'
   element :see_price, ".button.button--primary"
 end
