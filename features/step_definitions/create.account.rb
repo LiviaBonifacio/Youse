@@ -6,7 +6,7 @@ Given(/^access registration screen$/) do
 end
 
 When(/^inform the necessary data$/) do
-  @account.user_name.set(Faker::Name.name)
+  @account.user_name.set(Faker::Name.first_name)
   @account.new_email.set(Faker::Internet.email)
   @account.new_password.set('plsc1234')
   @account.password_confirmation.set('plsc1234')
